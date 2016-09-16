@@ -1,0 +1,33 @@
+.image-min{
+    border-radius: 8px;
+    width: 50px;
+    heigth: 50px;
+    border: 1px solid #ddd;
+}
+
+.cadre-image-nor{
+    border-radius: 8px;
+    width: 310px;
+    height: 310px;
+    border: 1px solid #ddd;
+}
+.image-nor{
+    border-radius: 8px;
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.image-max{
+    border-radius: 8px;
+    width: 300px;
+    heigth: 300px;
+    border: 1px solid #ddd;
+    padding: 1px;
+}
+
+.marg10{
+    margin: 10px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+	
+<hibernate-configuration>
+	<session-factory>
+		<!--  Paramètres de connexion à la BDD -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://10.110.10.32:3306/ecommerce</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">formation0</property>
+		
+		<!--  Comportement pour la conservation des tables -->
+		<property name="hbm2ddl.auto">update</property>
+		
+		<!--  Affiche les logs SQL -->
+		<property name="show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="use_sql_comments">true</property>
+		
+		<!--  Fichiers à mapper -->
+		<mapping class="com.M2I.ecommerce.beans.Client" />
+		<mapping class="com.M2I.ecommerce.beans.Produit" />
+		<mapping class="com.M2I.ecommerce.beans.Commande" />
+		
+	</session-factory>
+</hibernate-configuration>
